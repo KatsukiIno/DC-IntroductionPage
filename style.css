@@ -1,0 +1,46 @@
+header {
+  margin: 20px;
+}
+
+body {
+  margin: 0%;
+}
+
+.menu {
+  background-color: #003399;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border-radius: 0; 
+  border: none;
+  outline: none;
+  background-color: #003399;
+  color: white;
+  width: 14.3%;
+  height: 75px;
+  font-size: 20px;
+  &:hover{
+    background-color: #3366FF;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.menu button.contentBtn.active {
+  background-color: #3366FF;
+}
+
+#content-container {
+  margin: 20px;
+}
+
+#DC-proposal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* ビューポートの高さいっぱいに広がるように設定 */
+}

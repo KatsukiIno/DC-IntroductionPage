@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>成果物公開用webページ</title>
+  </head>
+  <header>
+    <h1>成果物公開web用ページ<br>新しいキャンパスマップ</h1>
+  </header>
+  <body>
+
+    <div class="menu">
+      <button class="contentBtn" onclick="loadContent('pages/content1.html')">紹介ページ</button>
+      <button class="contentBtn" onclick="loadContent('pages/content2.html')">企画書</button>
+      <button class="contentBtn" onclick="loadContent('pages/content3.html')">使用方法</button>
+      <button class="contentBtn" onclick="loadContent('pages/content4.html')">プログラム本体</button>
+      <button class="contentBtn" onclick="loadContent('pages/content5.html')">ソースコード</button>
+    </div>
+
+    <div id="content-container"></div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
