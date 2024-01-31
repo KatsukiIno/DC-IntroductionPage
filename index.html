@@ -6,20 +6,35 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>成果物公開用webページ</title>
   </head>
-  <header>
-    <h1>成果物公開web用ページ<br>新しいキャンパスマップ</h1>
-  </header>
   <body>
 
-    <div class="menu">
-      <button class="contentBtn" onclick="loadContent('pages/content1.html')">紹介ページ</button>
-      <button class="contentBtn" onclick="loadContent('pages/content2.html')">企画書</button>
-      <button class="contentBtn" onclick="loadContent('pages/content3.html')">使用方法</button>
-      <button class="contentBtn" onclick="loadContent('pages/content4.html')">プログラム本体</button>
-      <button class="contentBtn" onclick="loadContent('pages/content5.html')">ソースコード</button>
-    </div>
+    <header>
+      <h1>新しいキャンパスマップ</h1>
+      <div class="menu">
+        <button class="contentBtn" onclick="loadContent('pages/content1.html')">紹介ページ</button>
+        <button class="contentBtn" onclick="loadContent('pages/content2.html')">企画書</button>
+        <button class="contentBtn" onclick="loadContent('pages/content3.html')">使用方法</button>
+        <!-- <button class="contentBtn" onclick="loadContent('pages/content4.html')">プログラム本体</button> -->
+        <button class="contentBtn" onclick="loadContent('pages/content5.html')">ソースコード</button>
+      </div>
+    </header>
 
-    <div id="content-container"></div>
+    <main>
+      <div id="image-container">
+        <img src="images/image.jpg"></img>
+        <button id="mapPageBtn" onclick="openNewTab('https://katsukiino.github.io/DC/')">new-campusMap</button>
+      </div>
+
+      <div id="content-container"></div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="content">
+          <p>©DigitalContentチーム14</p>
+        </div>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="main.js"></script>
   </body>

@@ -1,9 +1,29 @@
 header {
-  margin: 20px;
+  width: 100%;
 }
 
 body {
+  width: 100%;
   margin: 0%;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center; /* 水平方向の中央寄せ */
+  align-items: center; /* 垂直方向の中央寄せ */
+  background-color: #003399;
+  padding: 5rem 0;
+  color: #fff;
+  bottom: 0px;
+}
+
+header h1 {
+  margin: 20px;
 }
 
 .menu {
@@ -30,6 +50,56 @@ button {
   }
 }
 
+img {
+  position: relative;
+  width: 100%; /* 画像の横幅を100%に設定 */
+  height: auto; /* 高さを自動で計算してアスペクト比を保つ */
+  display: block; /* 不要な空白を防ぐために画像をブロック要素として表示 */
+}
+
+#mapPageBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: orange;
+  color: #fff;
+  border: orange solid 2px;
+  border-radius: 8px;
+  &:hover{
+    background-color: #fff;
+    color: orange;
+    border: orange solid 2px;
+  }
+}
+
+#codePageBtn {
+  width: auto;
+  background: orange;
+  color: #fff;
+  border: orange solid 2px;
+  border-radius: 8px;
+  &:hover{
+    background-color: #fff;
+    color: orange;
+    border: orange solid 2px;
+  }
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+footer .container {
+  text-align: center;
+}
+
 .menu button.contentBtn.active {
   background-color: #3366FF;
 }
@@ -38,9 +108,9 @@ button {
   margin: 20px;
 }
 
-#DC-proposal-container {
+/* #DC-proposal-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%; /* ビューポートの高さいっぱいに広がるように設定 */
-}
+/* }  */
