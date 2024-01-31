@@ -74,6 +74,13 @@ img {
   }
 }
 
+#image-container p {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  color: #fff;
+}
+
 #codePageBtn {
   width: auto;
   background: orange;
