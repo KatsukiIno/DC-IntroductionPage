@@ -58,6 +58,7 @@ img {
 }
 
 #mapPageBtn {
+  width: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -106,6 +107,15 @@ footer .container {
 
 #content-container {
   margin: 20px;
+}
+
+.images {
+  width: 50%;
+  height: auto;
+}
+
+.content-3 {
+  margin: 5px
 }
 
 /* #DC-proposal-container {
